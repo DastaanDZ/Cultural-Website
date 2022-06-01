@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* .page_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 .page1{
    background-image: url("/1st.jpg") ;
    background-repeat: repeat;
@@ -13,7 +22,7 @@
   margin-top: 0;
   /* padding-top: 16.5rem; */
   color: white;
-  width: 31rem;
+  width: 35rem;
   font-family: 'Philosopher';
   font-style: normal;
   font-weight: 700;
@@ -21,30 +30,86 @@
   line-height: 61px;
   margin-bottom: 0;
   z-index: 1;
+  padding: 2rem;
+}
+.overlay_container{
+  position: absolute;
+  width: 100%;
+  display: flex;
+align-items: center;
+justify-content: center;
+object-fit: cover;
+object-position: center;
+height: 100%;
+
   
 }
-.image1{
-  position: absolute;
-  
+.overlay{
+  width: 100%;
+  height: 100%;
 }
 
 .page2{
-  height: 100vh;
+  height: auto;
   display: flex;
   width: auto;
   background-color: black;
+  padding: 0rem 2rem;
+  align-items: center;
+justify-content: center;
+font-family: 'Philosopher', sans-serif;
 }
   
 
+.image2_container{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
 .image2{
-  height:0.5rem;
-  width:3.5rem;
-  padding-left: 5rem;
-padding-top: 7rem;
-width: 50%;
+ width: 30rem;
 }
 .preamble{
   color: white;
   width: 50%;
+  font-size: 18px;
+  font-family: 'Philosopher', sans-serif;
+}
+.page3{
+  height: 40vh;
+}
+.footer{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background: #141414;
+  color: white;
+  padding-left: 2rem;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 1.3rem;
+
+}
+@media (max-width: 1220px) {
 }
 
+@media (max-width: 1024px) {
+  .page2{
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+  }
+  .image2_container{
+    width: 100%;
+  }
+  .preamble{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 550px) {
+}
