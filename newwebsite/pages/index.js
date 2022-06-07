@@ -6,14 +6,16 @@ import Cards from '../components/Cards';
 import "swiper/css/bundle";
 
 export default function Home() {
-  // console.log(img)
+  
+  
+
   return (
     <> 
     <div className={styles.page_container}>
     <div className={styles.page1}>
       <h1 className={styles.h1}>Centre for Cultural & Art Relations</h1>
       <div className={styles.overlay_container}>
-      <img src={img.src} alt="background" className={styles.overlay} />
+      {/* <img src={img.src} alt="background" className={styles.overlay} /> */}
       </div>
       </div>
 
